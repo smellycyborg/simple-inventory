@@ -4,7 +4,15 @@
     "$className": "DataModel",
 
     "ReplicatedStorage": {
-      
+      "Packages": {
+        "$path": "Packages"
+      },
+      "Controllers": {
+        "$path": "src/Controllers"
+      },
+      "RoactComponents": {
+        "$path": "src/RoactComponents"
+      }
     },
 
     "ServerStorage": {
@@ -14,15 +22,15 @@
     },
 
     "ServerScriptService": {
-      "Server": {
+      "init": {
         "$path": "src/server"
       }
     },
 
     "StarterPlayer": {
       "StarterPlayerScripts": {
-        "Controllers": {
-          "$path": "src/Controllers"
+        "ClientScripts": {
+          "$path": "src/clientScripts"
         }
       }
     },
