@@ -1,30 +1,27 @@
-# simple-invetnory
+# Simple Inventory
 
-player can [access-invetnory]
-player can [equip-items] `if player owns item/s`
-player can [unequip-items]
+As a player, I can `access my inventory`;
+As a player, I can `equip items` [if `i own them` and `my inventory isn't full`];
+As a player, I `unequip itmes` from my inventory;
+As a player, I can `attack using` my `activated weapon`;
 
-# todo:
-[inventory-service] create add and remove methods for inventory
-[invetnory-data] `manage through inventory service` create invetnory table per player
-[equipped] `manage through inventroy service` create equipped items table per player
+# Todo
+Inventory Service:  create add and remove methods for inventory;
+Invetnory Data:  `manage through inventory service` create invetnory table per player, provide ease of access to be able to search for items in inventory;
+Equipped:  `manage through inventroy service` create equipped items table per player;
 
-## [inventory-data]
-provide ease of access to be able to search for items in inventory
+## Classes
+Inventory Service - handle players inventory;
+Equip Service - handle `equipping` and `unequipping` items (for this project i kept inside inventory service);
+[NOTE:] Equip Service would be able to access inventory service through methods such as `InventoryService:GetPlayerInventory` or `InventoryService:DoesPlayerOwnItem()`;
+Roact Components for front-end - be able to manage states per player effeciently and maintain smooth developement down the line;
 
-## classes
-inventory service - handle players inventory
-equip service - handle `equipping` and `unequipping` items (for this project i kept inside inventory service)
+## Optimize for Performance
+Clean up all not needed tables of items;
+Handle user functionality on client;
+Defensive coding on server to prevent exploit, bugs, or spam `have not added spam protection [using something like a player state] in this project`;
 
-equip service would be able to access inventory service through methods such as `InventoryService:GetPlayerInventory` or `InventoryService:DoesPlayerOwnItem()`
-roact components for front end - be able to manage states per player effeciently and maintain smooth developement down the line
-
-## to optimize game performance
-clean up all not needed tables of items
-handle user functionality on client
-defensive coding on server to prevent exploit, bugs, or spam `have not added spam protection [using something like a player state] in this project`
-
-## test driven devleopment
-make use of promises and defensive coding practices
+## Test Driven Development
+Make use of promises and defensive coding practices;
 
 *proper commits have not been made for this project*
