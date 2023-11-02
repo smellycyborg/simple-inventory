@@ -14,7 +14,7 @@ Equipped:  `manage through inventory service` create equipped items table per pl
 ## Classes
 Inventory Service - handle players inventory;<br>
 Equip Service - handle `equipping` and `unequipping` items (for this project i kept inside inventory service);<br>
-[NOTE:] Equip Service would be able to access inventory service through methods such as `InventoryService:GetPlayerInventory` or `InventoryService:DoesPlayerOwnItem()`;<br>
+[NOTE:] Equip Service would be able to access inventory service through methods such as `InventoryService:GetPlayerInventory()` or `InventoryService:DoesPlayerOwnItem()`;<br>
 Roact Components for front-end - be able to manage states per player effeciently and maintain smooth development down the line;<br>
 
 ## Component Diagram
